@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Header from './../Header';
-import DashboardNewsFeed from './DashboardNewsFeed';
+import Header from '@/components/Header';
+import DashboardNewsFeed from '@/components/dashboard/DashboardNewsFeed';
 
-class CelebrationContainer extends Component {
+class Dashboard extends Component {
   render() {
     return (
       <div>
-        <Header />
         <div className="container is-fluid is-0">
           <div className="columns has-top-bottom-gap">
             <div className="column is-half">
@@ -19,4 +18,4 @@ class CelebrationContainer extends Component {
   }
 }
 
-export default CelebrationContainer;
+export default Dashboard;

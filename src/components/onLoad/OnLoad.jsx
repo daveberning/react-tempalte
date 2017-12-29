@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchWeatherOnLoad } from '../../actions';
+import { fetchWeatherOnLoad } from '@/actions';
 
 class WeatherDisplay extends Component {
   componentWillMount() {

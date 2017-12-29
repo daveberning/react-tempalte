@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
-import AppNavigator from './AppNavigator';
-import Logo from './../assets/logo-green.svg';
-import MoreApps from './../assets/more-apps.svg';
-import UserPhoto from './../assets/dave.jpg';
-import { NavLink } from 'react-router-dom';
-import '../styles/Header.scss';
+import Logo from '@/assets/logo-green.svg';
+import Navigation from '@/components/Navigation';
+import styles from '@/styles/Header.scss';
 
 class Header extends Component {
   render() {
     return (
-      <header>
+      <header className={styles.header}>
         <div className="columns is-mobile has-no-top-bottom-gap">
           <div className="column">
-            <img src={MoreApps} alt="More Apps" width="30"/>
+            <img className="is-inline-block logo" src={Logo} alt="Drees Homes Logo" width="100"/>
           </div>
-          <div className="column logo has-text-centered">
-            <img src={Logo} alt="Drees Homes Logo"/>
+          <div className="column has-text-centered">
+            <Navigation />
           </div>
           <div className="column has-text-right">
             <p className="is-inline is-hidden-mobile">Dave Berning</p>
-            <img class="is-inline is-rounded" src={UserPhoto} alt="Dave" width="30"/>
           </div>
         </div>
-        <AppNavigator />
       </header>
     );
   }

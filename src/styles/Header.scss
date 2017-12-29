@@ -4,11 +4,16 @@ header {
   padding: 0 15px;
   border-bottom: 1px solid #ccc;
 
-  p + img {
-    margin-left: 10px;
+  nav ul li {
+    display: inline;
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
-.logo {
-  max-width: 110px;
+.header {
+  padding: 15px;
 }

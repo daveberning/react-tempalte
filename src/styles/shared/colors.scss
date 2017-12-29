@@ -1,14 +1,28 @@
-$brand-dark-green: #00462e !default; // rgb(0, 70, 46)
-$brand-light-green: #a1b11a !default; // rgb(161, 177, 26)
-$brand-orange: #f7931d !default; // rgb(247, 147, 29)
-$brand-yellow: #fec10d !default; // rgb(254, 193, 13)
-$brand-light-blue: #00b2e2 !default; // rgb(0, 178, 226)
-$brand-purple: #662e6b !default; // rgb(102, 46, 107)
-$gray-darker: lighten(#000, 13.5%) !default; // #222
-$gray-dark: lighten(#000, 20%) !default; // #333
-$gray: lighten(#000, 33.5%) !default; // #555
-$gray-light: lighten(#000, 46.7%) !default; // #777
-$gray-lighter: lighten(#000, 93.5%) !default; // #eee
-$bg-off-white-1: #f5f5f5 !default;
-$bg-off-white-2: #f8f8f8 !default;
-$bg-off-white-3: #f9f9f9 !default;
+/* FONTS
+----------------------------- */
+h1, h2, h3, h4, h5, h6, p, div, span, blockquote {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* COLORS
+----------------------------- */
+$primary: #004622;
+$secondary: #a1b11a;
+$tertiary: #2683DB;
+$cta: #f7931d;
+
+$success: #8cc152;
+$danger: #da4453;
+$warning: #f6bb42;
+$info: #46b8da;
+
+$black: #000;
+$white: #fff;
+
+@mixin gradient($color) {
+  background: $color !important;
+  background: -moz-linear-gradient(45deg, $color 0%, adjust-hue($color, 15%) 100%) !important;
+  background: -webkit-linear-gradient(45deg, $color 0%, adjust-hue($color, 15%) 100%) !important;
+  background: linear-gradient(45deg, $color 0%, adjust-hue($color, 15%) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='adjust-hue($color, 15%)',GradientType=1) !important;
+}

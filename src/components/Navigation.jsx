@@ -8,7 +8,7 @@ class Header extends Component {
       <nav>
         <ul>
           <li><Link to="/">Dashboard</Link></li>
-          <li><Link to="/interactive-plat-map">Interactive Plat Map</Link></li>
+          {/* <li><Link to="/another-component">Another Component</Link></li> */}
         </ul>
       </nav>
     );
